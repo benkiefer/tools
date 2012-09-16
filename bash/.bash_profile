@@ -1,9 +1,11 @@
 export CYGWIN=nodosfilewarning
 ###########################################
 #ruby commands
-#if you are having trouble getting ruby to execute commands, consider adding a symbolic link to your ruby executable
+#ruby and cygwin together suck. fortunately, installing a gem generates a bat file that you can point at instead.
 alias gem=gem.bat
 alias m=m.bat
+alias rake=rake.bat
+alias irb=irb.bat
 #
 #
 ###########################################
