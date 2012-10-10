@@ -34,6 +34,13 @@ alias cr='camelRide'
 alias tools='cd c:/tools'
 alias hl='cd c:/projects/portfolio/hibernate-learning'
 alias home='cd ~'
+###########################################
+#vagrant
+alias vs='tools && cd vagrant-stuff'
+alias vu='pushd . && vs && vagrant up && popd'
+alias vunp='pushd . && vs && vagrant up --no provision && popd'
+alias vh='pushd . && vs && vagrant halt && popd'
+alias vd='pushd . && vs && vagrant destroy && popd'
 ############################################
 #
 #ruby commands
@@ -41,6 +48,7 @@ alias home='cd ~'
 #
 case `uname` in *CYGWIN*)
 #
+alias vagrant=vagrant.bat
 alias gem=gem.bat
 alias rake=rake.bat
 alias irb=irb.bat
