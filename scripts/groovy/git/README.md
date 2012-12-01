@@ -23,4 +23,8 @@ The output will look something like this:
     Failed processing the following directories:
             - project B
 
+Execution will look something like this.
+
+    groovy gitSvnRebaseAll directoryPath			
+
 Enjoy			
