@@ -25,6 +25,6 @@ The output will look something like this:
 
 Execution will look something like this.
 
-    groovy gitSvnRebaseAll directoryPath			
+    groovy rebaseAll directoryPath			
 
 Enjoy			
