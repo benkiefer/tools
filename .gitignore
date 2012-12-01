@@ -1,5 +1,1 @@
-*.idea
-*.ipr
-*.iml
-*.iws
-target
+*.vagrant
