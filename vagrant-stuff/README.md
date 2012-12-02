@@ -1,5 +1,7 @@
 # Vagrant Stuff
-Working through Puppet Pro by Turnbull and McCune. In order to use these you must have:
+I'm working through Puppet Pro by Turnbull and McCune. 
+
+In order to use this stuff you must have:
  - Vagrant installed
  - Virtual Box installed
  - This project checked out
