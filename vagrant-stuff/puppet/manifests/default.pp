@@ -19,5 +19,5 @@
 # List of modules
 
 	# include activemq
-	# include vim
+	 include vim
 	# include apache

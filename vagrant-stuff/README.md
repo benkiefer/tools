@@ -11,7 +11,6 @@ To start up the VM, cd to the checkout directory and type 'vagrant up'. For prac
 
 You can can connect to the VM through Cygwin with command "ssh vagrant@localhost -p2222". When prompted for the password, type "vagrant".
  
-
 # Current Modules 
  - VIM
  - Apache
