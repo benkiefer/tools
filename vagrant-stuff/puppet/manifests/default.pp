@@ -16,8 +16,13 @@
 		command => '/usr/bin/apt-get update'
 	}
 
+	package { 'openjdk-7-jre':
+		ensure => present,
+		require => Exec["apt-get update"],
+	}
+
 # List of modules
 
-	# include activemq
+	#include activemq
 	 include vim
 	# include apache
