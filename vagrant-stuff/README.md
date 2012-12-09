@@ -1,11 +1,16 @@
 # Vagrant Stuff
-I'm working through Puppet Pro by Turnbull and McCune. 
+Resources:
+ - Pro Puppet
+ - puppetcookbook.com
+ - vagrantup.com
+ - packages.ubuntu.com
 
 In order to use this stuff you must have:
  - Vagrant installed
  - Virtual Box installed
  - This project checked out
- - At least a 512MB of RAM available 
+ - At least a 512MB of RAM available
+ - The precise64 box installed ("vagrant box add precise64 http://files.vagrantup.com/precise64.box")
 
 To start up the VM, cd to the checkout directory and type 'vagrant up'. For practical purposes, you will need to know more commands than this, but at least this will get your vm up.
 
