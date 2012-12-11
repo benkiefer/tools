@@ -1,5 +1,4 @@
-# Standard configuration pupet file	
-	
+# Standard configuration puppet file	
 	# set constant file values
 	File {
 		owner   => root,
@@ -9,11 +8,11 @@
 
 	# set up path correctly
 	Exec { 
-		path => '/usr/bin:/bin:/usr/sbin:/sbin' 
+		path => '/usr/bin:/bin:/usr/sbin:/sbin', 
 	}
 
 	exec { 'apt-get update':
-		command => '/usr/bin/apt-get update'
+		command => '/usr/bin/apt-get update',
 	}
 
 	package { 'openjdk-7-jre':
@@ -21,8 +20,7 @@
 		require => Exec["apt-get update"],
 	}
 
-# List of modules
-
-	#include activemq
-	 include vim
+	# List of modules
+	include activemq
+	# include vim
 	# include apache

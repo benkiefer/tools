@@ -19,8 +19,9 @@ You can can connect to the VM through Cygwin with command "ssh vagrant@localhost
 # Current Modules 
  - VIM
  - Apache
+ - Activemq
 
 Note: VIM is the only module that is installed by default currently.
  
 # Coming Soon
-Modules for ActiveMQ, MySql, and H2. I hope.
+Modules for MySql, and H2. I hope.
