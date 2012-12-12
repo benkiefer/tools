@@ -1,13 +1,12 @@
 Vagrant::Config.run do |config|
 	config.vm.box = "precise64"
-
-	#config.vm.boot_mode = :gui
-
+	config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+	
 	config.vm.provision :puppet do |puppet|
 		puppet.manifests_path = "puppet/manifests"
 		puppet.module_path = "puppet/modules"
-		puppet.manifest_file = "default.pp"
-		puppet.options = "--verbose --debug"
+		puppet.manifest_file = "base-manifest.pp"
+		# puppet.options = "--verbose --debug"
 	end
   
 	config.vm.forward_port 80, 4567

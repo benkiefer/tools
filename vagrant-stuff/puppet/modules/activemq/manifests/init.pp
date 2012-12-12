@@ -5,7 +5,6 @@ class activemq {
 	
 	package { "activemq":
 		ensure => present,
-		before => File['/etc/activemq/instances-enabled/main/activemq.xml']
 	}
 
 	file { "/etc/activemq/instances-enabled/main":
@@ -16,14 +15,14 @@ class activemq {
 	file { "/etc/activemq/instances-enabled/main/activemq.xml":
 		ensure => present,
 		content => template("activemq/activemq.xml.erb"),
-		require => File['/etc/activemq/instances-enabled/main'],
+		require => File["/etc/activemq/instances-enabled/main"],
 	}
 	
 	service { "activemq":
 		ensure => running,
 		enable => true,
-		subscribe => File['/etc/activemq/instances-enabled/main/activemq.xml'],
-		require => Package["activemq"],
+		subscribe => File["/etc/activemq/instances-enabled/main/activemq.xml"],
+		require => File["/etc/activemq/instances-enabled/main/activemq.xml"],
 	}
 		
 }

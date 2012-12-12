@@ -1,4 +1,5 @@
 # Standard configuration puppet file	
+
 	# set constant file values
 	File {
 		owner   => root,
@@ -11,14 +12,17 @@
 		path => '/usr/bin:/bin:/usr/sbin:/sbin', 
 	}
 
-	exec { 'apt-get update':
+	exec { 'apt-get-update':
 		command => '/usr/bin/apt-get update',
 	}
 
-	package { 'openjdk-7-jre':
-		ensure => present,
-		require => Exec["apt-get update"],
-	}
+	# force all package executions to happen after the apt-get update
+	Exec["apt-get-update"] -> Package <| |>
+
+#	package { 'openjdk-7-jre':
+#		ensure => present,
+#		require => Exec["apt-get-update"],
+#	}
 
 	# List of modules
 	include activemq
