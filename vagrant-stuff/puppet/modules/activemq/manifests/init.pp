@@ -1,7 +1,6 @@
 # ActiveMQ Manifest
 
-class activemq {	
-	$port = "61616"
+class activemq($port="61616") {	
 	
 	package { "activemq":
 		ensure => present,
