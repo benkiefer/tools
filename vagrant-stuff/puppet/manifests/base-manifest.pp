@@ -19,12 +19,7 @@
 	# force all package executions to happen after the apt-get update
 	Exec["apt-get-update"] -> Package <| |>
 
-#	package { 'openjdk-7-jre':
-#		ensure => present,
-#		require => Exec["apt-get-update"],
-#	}
-
-	# List of modules
-	include activemq
-	# include vim
-	# include apache
+	# start up activemq
+	class { "activemq":
+		port => "61616"
+	}

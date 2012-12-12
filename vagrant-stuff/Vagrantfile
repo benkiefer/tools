@@ -9,7 +9,6 @@ Vagrant::Config.run do |config|
 		# puppet.options = "--verbose --debug"
 	end
   
-	config.vm.forward_port 80, 4567
 	config.vm.forward_port 61616, 61616
   
 end
