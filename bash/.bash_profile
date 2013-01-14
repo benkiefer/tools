@@ -22,7 +22,6 @@ alias gsr='git svn rebase'
 alias gsd='git svn dcommit --rmdir'
 #
 #
-#
 ###########################################
 #folders
 alias proj='cd c:/projects'
@@ -34,6 +33,8 @@ alias cr='camelRide'
 alias tools='cd c:/tools'
 alias hl='cd c:/projects/portfolio/hibernate-learning'
 alias home='cd ~'
+#
+#
 ###########################################
 #vagrant
 alias vs='tools && cd vagrant-stuff'
@@ -58,5 +59,6 @@ alias irb=irb.bat
 alias m=m.bat
 #
 esac
+#
 #
 #############################################
