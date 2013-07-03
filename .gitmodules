@@ -1,3 +1,6 @@
 [submodule "vagrant-stuff"]
 	path = vagrant-stuff
 	url = https://github.com/kingOburgers/vagrant-utils.git
+[submodule "vagrant-utils"]
+	path = vagrant-utils
+	url = https://github.com/benkiefer/vagrant-utils.git
