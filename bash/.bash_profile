@@ -1,4 +1,3 @@
-export CYGWIN=nodosfilewarning
 ###########################################
 #editor commands
 alias edit=notepad++
@@ -24,15 +23,15 @@ alias gsd='git svn dcommit --rmdir'
 #
 ###########################################
 #folders
-alias proj='cd c:/projects'
-alias camelRide='cd c:/projects/camel-ride'
-alias sw='cd c:/projects/spring-web'
+alias proj='cd c:/development/projects'
+alias projects='proj'
+alias camelRide='cd c:/development/projects/camel-ride'
+alias sw='cd c:/development/projects/spring-web'
 alias demo='sw'
-alias ge='cd c:/projects/groovy-example'
-alias mhs='cd c:/projects/mvn_helper_script'
+alias ge='cd c:/development/projects/groovy-example'
+alias mhs='cd c:/development/projects/mvn_helper_script'
 alias cr='camelRide'
-alias tools='cd c:/tools'
-alias hl='cd c:/projects/portfolio/hibernate-learning'
+alias tools='cd c:/development/tools'
 alias home='cd ~'
 #
 #
