@@ -23,6 +23,7 @@ alias gsd='git svn dcommit --rmdir'
 #
 ###########################################
 #folders
+alias vms='cd c:/development/vms'
 alias proj='cd c:/development/projects'
 alias projects='proj'
 alias camelRide='cd c:/development/projects/camel-ride'
