@@ -7,6 +7,8 @@ $BasePackages = 'googlechrome',
 		'notepadplusplus'
 
 $DevPackages =  'git', 
+		'virtualbox',
+		'vagrant',
 		'ruby', 
 		'nodejs', 
 		'java.jdk', 
