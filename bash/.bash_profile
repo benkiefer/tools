@@ -38,14 +38,11 @@ alias home='cd ~'
 #
 ###########################################
 #vagrant
-alias vs='tools && cd vagrant-stuff'
-alias vu='pushd . && vs && vagrant up && popd'
-alias vstat='pushd . && vs && vagrant status && popd'
-alias vunp='pushd . && vs && vagrant up --no provision && popd'
-alias vh='pushd . && vs && vagrant halt && popd'
-alias vd='pushd . && vs && vagrant destroy && popd'
-alias vsr='pushd . && vs && vagrant halt && vagrant up --no-provision && popd'
-alias vhr='pushd . && vs && vagrant destroy && vagrant up && popd'
+alias vu='vagrant up'
+alias vst='vagrant status'
+alias vunp='vagrant up --no provision'
+alias vh='vagrant halt'
+alias vd='vagrant destroy'
 ############################################
 #
 #ruby commands
